@@ -1,66 +1,62 @@
-# Foodiee - Online Food Ordering System
+# Foodiee — Online Food Ordering System
 
-A comprehensive full-stack web application designed to facilitate online food ordering, restaurant management, and delivery tracking. Built with the MERN stack (MongoDB (Atlas), Express.js, React-concepts/HTML/JS, Node.js).
+A full-stack food ordering and restaurant management application connecting customers, restaurant partners, and administrators.
 
-## Project Overview
-Foodiee serves as a platform connecting three key stakeholders:
-1.  **Customers**: Can browse menus, place orders, and track delivery status.
-2.  **Partners (Restaurants)**: Can manage their business profile and view incoming orders.
-3.  **Administrators**: Have full oversight of the system, including partner approvals and platform analytics.
+## Overview
+- **Customers:** Browse food items, manage a cart, place orders, and view order history.
+- **Restaurant partners:** Manage restaurant information and incoming orders.
+- **Administrators:** Oversee users, restaurant partners, and platform operations.
 
-## Features
-*   **User Authentication**: Secure Login and Signup for Users, Partners, and Admins.
-*   **Dynamic Menu**: Real-time fetching of menu items from the database.
-*   **Ordering System**: Complete flow from Cart to Order Confirmation.
-*   **Order History**: Users can view their past orders.
-*   **Admin Dashboard**: Centralized control to manage content and users.
-*   **Partner Dashboard**: Detailed statistics and order management for restaurants.
-*   **Responsive Design**: Mobile-friendly interface powered by Tailwind CSS.
+## Key Features
+- Role-based authentication for customers, partners, and admins
+- Dynamic menu and food item management
+- Cart and order placement workflow
+- Customer order history
+- Partner order management dashboard
+- Admin dashboard for platform operations
+- Responsive interface using Tailwind CSS
 
 ## Tech Stack
-*   **Frontend**: HTML5, CSS3, JavaScript, Tailwind CSS.
-*   **Backend**: Node.js, Express.js.
-*   **Database**: MongoDB Atlas.
-*   **Tools**: VS Code, Git, Postman.
+| Layer | Technologies |
+|---|---|
+| Frontend | HTML5, CSS3, JavaScript, Tailwind CSS |
+| Backend | Node.js, Express.js |
+| Database | MongoDB Atlas |
+| Tools | Git, GitHub, VS Code, Postman |
 
-## Setup Instructions
-1.  **Clone the repository**:
-    ```bash
-    git clone <repository_url>
-    cd Foodiee/College-Project
-    ```
+## Architecture
+The application follows a client-server approach. The frontend manages user interaction, while the Express backend handles application routes and database communication.
 
-2.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
+## Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Karthikeyansivalingam2/Foodie.git
+   cd Foodie
+   ```
+2. Install dependencies in the project directory:
+   ```bash
+   npm install
+   ```
+3. Create a local `.env` file and configure the variables required by the project. Example:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=3000
+   ```
+4. Start the application using the script configured in `package.json`:
+   ```bash
+   npm start
+   ```
+   If a development script is configured, use `npm run dev`.
+5. Open the local URL shown in your terminal.
 
-3.  **Configure Environment**:
-    Create a `.env` file in the root directory and add your MongoDB connection string:
-    ```env
-    MONGODB_URI=your_mongodb_connection_string
-    PORT=3000
-    ```
+> Keep credentials, database URLs, and API keys in local environment files. Never commit real secrets.
 
-4.  **Run the Server**:
-    ```bash
-    npm start
-    ```
-    Or for development with auto-reload:
-    ```bash
-    npm run dev
-    ```
+## Future Improvements
+- Automated tests for key user flows
+- Order status notifications
+- Accessibility and performance improvements
+- Deployment and setup documentation
 
-5.  **Access the Application**:
-    Open `http://localhost:3000` in your browser.
-
-## Project Structure
-*   `/assets`: Static images and CSS files.
-*   `/`: HTML pages for all views.
-*   `server.js`: Main backend entry point containing all API routes.
-*   `PROJECT_REPORT.md`: Detailed system requirements and design documentation.
-
-
-Developed by:
-1.  Karthikeyan
-
+## Author
+**Karthikeyan S.**  
+[GitHub Profile](https://github.com/Karthikeyansivalingam2)
